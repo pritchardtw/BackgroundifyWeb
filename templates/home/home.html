@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backgroundify!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home/css/home.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url"                content="https://backgroundify.com" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Backgroundify!" />
+    <meta property="og:description"        content="Make your favorite websites your device wallpaper" />
+    <meta property="og:image"              content="https://lh3.googleusercontent.com/lUAeQsy79bHxGBvFYeiUoovNen8DJWArSXbhe-WFI2vsupDUY3Rr1PHAlbgQ4IVvXtk=h900-rw" />
+  </head>
+  <body>
+    <div class="home-container">
+        <h1 class="banner-text">
+            Backgroundify!
+        </h1>
+        <div class="description">
+            <p>
+                Turn your favorite websites into your device wallpaper! Choose how often you want your background to update!
+                Pick your own websites, or use ours!
+            </p>
+        </div>
+        <div class="content-flex-container">
+            <div class="content-flex-child">
+                <h3>
+                    Download the App!
+                </h3>
+                <a class="play-link" target="_blank" href='https://play.google.com/store/apps/details?id=io.thomaspritchard.backgroundify&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                    <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+                </a>
+            </div>
+            <div class="content-flex-child">
+                <h3>
+                    How to use it!
+                </h3>
+                <ul class="instructions">
+                    <li>
+                        Download the app!
+                    </li>
+                    <li>
+                        Select a website!
+                    </li>
+                    <li>
+                        Choose update frequency!
+                    </li>
+                    <li>
+                        Hit Backgroundify!
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-secondary">
+            <h1>Use our website (if you want)!</h1>
+            <a href="{{ url_for('sample') }}"><h3>https://backgroundify.com/sample</h3></a>
+        </div>
+    </div>
+  </body>
+</html>
