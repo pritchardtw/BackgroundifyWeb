@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Backgroundify!</title>
+    {% if css_file %}
+      <link rel="stylesheet" href="{{ url_for('static', filename=css_file) }}">
+    {% endif %}
     <link rel="stylesheet" href="{{ url_for('static', filename='sample/css/sample.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:url"                content="https://backgroundify.com/sample" />
